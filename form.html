@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <form action="results.html" method="get" enctype="multipart/form-data" novalidate>
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="Naam"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div>
+        <label
+          >Email
+          <input type="email" name="com" />
+        </label>
+      </div>
+      <div>
+          <label for="phone">Phone</label>
+          <input type="tel" name="durbhash" id="phone">
+      </div>
+      <div>
+        <label for="Age">Age</label>
+        <input type="number" id="Age" name="Umr" min="1" max="100" step="3" />
+      </div>
+      <div>
+        <label>
+            Colour
+            <input type="color" name="rang">
+        </label>
+      </div>
+      <div>
+        <label for="DOB">DOB</label>
+        <input
+          type="date"
+          name="Dinank"
+          value="DOB"
+          min="2000-07-27"
+          max="2050-08-23"
+        />
+      </div>
+      Favourite Food
+      <div>
+        <label for="manchurian">Manchurian</label>
+        <input type="checkbox" id="manchurian" name="bhojan" />
+      </div>
+      <div>
+        <label for="meat">Chicken Currry</label>
+        <input type="checkbox" name="bhojan" id="meat" />
+      </div>
+      <div>
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="prajati" id="male" value="purus" />
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="prajati" id="female" value="mahila" />
+        </div>
+      </div>
+      <div>
+        <label for="eye-color">Eye color</label>
+        <select name="aakhRang" id="eye-color" multiple>
+          <option value="brown">Brown</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div>
+        <label for="bio">Bio</label>
+        <textarea name="selfIntro" id="bio"></textarea>
+      </div>
+      <div>
+        <label for="f"></label>
+        <input type="file" id="f" name="dastavej">
+      </div>
+      <div>
+        <label>
+            URL
+          <input type="url" name="link" >
+        </label>
+      </div>
+      <div>
+        <label
+          >Password
+          <input type="password" name="lock" required />
+        </label>
+      </div>
+      <input type="hidden" name="hide" value="not-visible" />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
